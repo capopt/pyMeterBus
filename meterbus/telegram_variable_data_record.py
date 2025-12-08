@@ -184,12 +184,20 @@ class TelegramVariableDataRecord(object):
         if self.dib.function_type == FunctionType.SPECIAL_FUNCTION:
             value = self._dataField.decodeRAW
 
+        vife = ""
+        if len(self.vib.parts) > 1 and self.vib.parts[0] == 0xff:
+            vife = hex(self.vib.parts[1])
+        vif = ""
+        if len(self.vib.parts) > 0:
+            vif = hex(self.vib.parts[0])
         record = {
             'value': value,
             'unit': unit,
             'type': str(typ),
             'storage_number': storage_number,
-            'function': str(self.dib.function_type)
+            'function': str(self.dib.function_type),
+            'vif': vif,
+            'vife': vife
         }
 
         if unit_enh is not None:
