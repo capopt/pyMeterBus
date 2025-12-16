@@ -189,7 +189,8 @@ class TelegramVariableDataRecord(object):
             'unit': unit,
             'type': str(typ),
             'storage_number': storage_number,
-            'function': str(self.dib.function_type)
+            'function': str(self.dib.function_type),
+            'raw_vib': self.vib
         }
 
         if unit_enh is not None:
