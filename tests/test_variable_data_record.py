@@ -105,6 +105,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record0(self):
         dict_record = {
+            "raw_vib": [253, 27],
             "value": 0,
             "unit": "MeasureUnit.NONE",
             "type": "VIFUnitExt.DIGITAL_INPUT",
@@ -116,6 +117,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record1(self):
         dict_record = {
+            "raw_vib": [252, 116],
             "value": 45.64,
             "unit": "%RH",
             "type": "VIFUnit.VARIABLE_VIF",
@@ -127,6 +129,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record2(self):
         dict_record = {
+            "raw_vib": [252, 116],
             "value": 45.52,
             "unit": "%RH",
             "type": "VIFUnit.VARIABLE_VIF",
@@ -141,6 +144,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record4(self):
         dict_record = {
+            "raw_vib": [101],
             "value": 22.56,
             "unit": "MeasureUnit.C",
             "type": "VIFUnit.EXTERNAL_TEMPERATURE",
@@ -152,6 +156,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record5(self):
         dict_record = {
+            "raw_vib": [101],
             "value": 21.60,
             "unit": "MeasureUnit.C",
             "type": "VIFUnit.EXTERNAL_TEMPERATURE",
@@ -163,6 +168,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record6(self):
         dict_record = {
+            "raw_vib": [101],
             "value": 23.39,
             "unit": "MeasureUnit.C",
             "type": "VIFUnit.EXTERNAL_TEMPERATURE",
@@ -174,6 +180,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record7(self):
         dict_record = {
+            "raw_vib": [114],
             "value": 86400,
             "unit": "MeasureUnit.SECONDS",
             "type": "VIFUnit.AVG_DURATION",
@@ -185,6 +192,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record8(self):
         dict_record = {
+            "raw_vib": [101],
             "value": 22.76,
             "unit": "MeasureUnit.C",
             "type": "VIFUnit.EXTERNAL_TEMPERATURE",
@@ -196,6 +204,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record9(self):
         dict_record = {
+            "raw_vib": [101],
             "value": 22.69,
             "unit": "MeasureUnit.C",
             "type": "VIFUnit.EXTERNAL_TEMPERATURE",
@@ -209,6 +218,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record10(self):
         dict_record = {
+            "raw_vib": [120],
             "value": 54000834,
             "unit": "MeasureUnit.NONE",
             "type": "VIFUnit.FABRICATION_NO",
@@ -220,6 +230,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record11(self):
         dict_record = {
+            "raw_vib": [253, 15],
             "value": 262144,
             "unit": "MeasureUnit.NONE",
             "type": "VIFUnitExt.SOFTWARE_VERSION",
@@ -231,6 +242,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record12(self):
         dict_record = {
+            "raw_vib": [131, 59],
             "value": 1234567,
             "unit": "MeasureUnit.WH",
             "type": "VIFUnit.ENERGY_WH",
@@ -243,6 +255,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_json_record13(self):
         dict_record = {
+            "raw_vib": [131, 60],
             "value": 1234567,
             "unit": "MeasureUnit.WH",
             "type": "VIFUnit.ENERGY_WH",

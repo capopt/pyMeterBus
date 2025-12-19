@@ -47,3 +47,6 @@ exclude = ["tests", "examples"]
 
 [tool.setuptools.dynamic]
 version = { attr = "meterbus.__version__" }
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
